@@ -1,0 +1,70 @@
+# Ignore the Library folder (Generated and not needed in version control)
+Library/
+
+# Ignore the Temp folder (Generated and not needed in version control)
+Temp/
+
+# Ignore the Logs folder (Generated and not needed in version control)
+Logs/
+
+# Ignore the build results
+Build/
+
+# Ignore the Packages folder except for the manifest file
+Packages/*
+!Packages/manifest.json
+
+# Ignore the ProjectSettings folder except for the project version file
+ProjectSettings/*
+!ProjectSettings/ProjectVersion.txt
+
+# Ignore auto-generated files and folders
+UserSettings/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.pidb.meta
+
+# Ignore Unity auto-generated meta files
+*.pidb.meta
+
+# Ignore build directories and results
+[Bb]uild/
+[Bb]uilds/
+Assets/StreamingAssets/*
+
+# Ignore the crash reports
+CrashReports/
+
+# Ignore auto-generated license files
+[Ll]icense.txt
+
+# Ignore the object files and compiled library files
+[Bb]in/
+[Oo]bj/
+
+# Ignore Unity-generated file that contains the current environment layout
+*.csproj
+
+# Ignore logs and local cache files
+logs/
+[Ll]ogs/
+*.stackdump
+.vscode/
+
+# Ignore the local cache directory
+Cache/
+
+# Ignore the temporary files created by Unity
+[Uu]nityGenerated/
