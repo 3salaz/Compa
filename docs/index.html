@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui"
+    />
+    <title>Unity Project Documentation</title>
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/docsify/lib/themes/buble.css" />
+    <meta
+      name="description"
+      content="Documentation for the Unity project by Erik Salazar"
+    />
+
+    <!-- Custom CSS (Optional) -->
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .sidebar {
+        background-color: #f8f9fa;
+      }
+      .content {
+        max-width: 800px;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <!-- Docsify Core -->
+    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+
+    <!-- Docsify Plugins (Optional)
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script> -->
+
+    <script>
+      window.$docsify = {
+        name: "Compa Project Docs",
+        repo: "https://github.com/3salaz/Compa", // Update with your GitHub repo URL
+        loadSidebar: true, // Use _sidebar.md for navigation
+        loadNavbar: true, // Use _navbar.md for top navigation
+        coverpage: true, // Enable cover page
+        subMaxLevel: 2, // Max header depth in the sidebar
+        auto2top: true, // Automatically scroll to top on page change
+        themeColor: "#E4007C", // Primary color (adjust to match your branding)
+        search: {
+          maxAge: 86400000, // Expiration time, the default one day
+          paths: "auto", // Automatically include paths for searching
+          placeholder: "Type to search",
+          noData: "No results found!",
+          // Localization settings
+          locales: {
+            "/": {
+              placeholder: "Type to search",
+              noData: "No results found!",
+            },
+            "/zh-cn/": {
+              placeholder: "搜索",
+              noData: "找不到结果",
+            },
+          },
+        },
+        plugins: [
+          function (hook, vm) {
+            hook.doneEach(function () {
+              // Example hook for additional functionality if needed
+            });
+          },
+        ],
+      };
+    </script>
+  </body>
+</html>
